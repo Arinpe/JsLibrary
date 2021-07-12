@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Library JS</title>
+  <link
+    href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAxDsfAAoDAQAfxLkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACIiIiIiIiIAIiIiIiIiIgAiIiIiEREiACIiAAARESIAIiIAABERIgAiIgAAERECACIiAAAREQAAIiIAABERAAAiIgAAEREAACIiAAAREQAAIiIAABERAAAiIgAAAAAAICIiAgAzMwAiIiIiADMzACIiIiIAMzMAIiIiIiAzMwDAAAAAwAAAAMAAAADDwAAAw8AAAMPCAADDwwAAw8MAAMPDAADDwwAAw8MAAMP/AABCwwAAAMMAAADDAAAAQwAA"
+    rel="icon" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+<body class="container banner">
+  <h1 class="main_header">Library</h1>
+  <div>
+    <form action="" id="myForm">
+      <div class="form-group">
+        <label for="name">Title</label>
+        <input type="text" class="form-control text-field" id="name" required/>
+      </div>
+      <div class="form-group">
+        <label for="author">Author</label>
+        <input type="text" class="form-control" id="author" required/>
+      </div>
+      <div class="form-group">
+        <label for="numPages">Pages</label>
+        <input type="number" min="0" name="numPages" id="pages" class="form-control" required/>
+      </div>
+      <div class="form-group">
+        <label for="status">Status</label>
+        <select name="status" id="status" class="form-control">
+          <option value="read">Read</option>
+          <option value="not read">Not read</option>
+        </select>
+      </div>
+      <input type="submit" value="submit" class="btn btn-info btn-lg btn-block" />
+    </form>
+  </div>
+  <button type="button" class="btn btn-primary btn-lg btn-block mt-5" id="btn" onclick="addClassToForm()">Add
+    Books</button>
+  <div class="row">
+    <div class="twelve columns"></div>
+    <table class="table table-hover mt-4">
+      <tr class="table-dark">
+        <th scope="col">Name</th>
+        <th scope="col">Author</th>
+        <th scope="col">Pages</th>
+        <th scope="col">Status</th>
+        <th scope="col">Change Status</th>
+        <th scope="col">Remove</th>
+      </tr>
+      <tbody id="book-table-body"></tbody>
+    </table>
+  </div>
+</div>
+
+
+<script src="app.js"></script>
+</body>
+
+</html>
