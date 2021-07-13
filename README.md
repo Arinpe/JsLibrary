@@ -2,7 +2,7 @@
 
 ## Description: Library Javacript
 
-A simple vanila Javascript, HTML, and CSS3, project .This project has the following features:
+A simple Javascript, HTML, and CSS3, project .This project has the following features:
 
 - Users can add the books title 
 
@@ -15,7 +15,7 @@ A simple vanila Javascript, HTML, and CSS3, project .This project has the follow
 
 ## Live Demo
 
-- [Live Demo Link]()
+- [Live Demo Link](https://raw.githack.com/Arinpe/JsLibrary/tree/feature)
 
 
 ## Built With
